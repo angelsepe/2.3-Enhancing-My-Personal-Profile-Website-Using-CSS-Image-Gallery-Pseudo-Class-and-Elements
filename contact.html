@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me - My Personal Profile</title>
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+
+
+
+<body id="top">
+
+
+
+    <header>
+
+        <h1 id="contact-section">CONTACT ME</h1>
+
+    </header>
+
+
+
+    <nav>
+
+        <a class="nav-link" href="index.html">Home</a> |
+
+        <a class="nav-link" href="about.html">About Me</a> |
+
+        <a class="nav-link" href="hobbies.html">Hobbies</a> |
+
+        <a class="nav-link" href="favorites.html">Favorites</a> |
+
+        <a class="nav-link" href="goals.html">Goals</a> |
+
+        <a class="nav-link" href="contact.html">Contact Me</a>
+
+    </nav>
+
+
+
+    <hr>
+
+
+
+    <main>
+
+
+
+        <section>
+
+            <h2 class="section-title">Get in Touch</h2>
+
+            <p>Feel free to fill out the form below. You can send me a message about school projects, feedback, or collaboration.</p>
+
+        </section>
+
+
+
+        <section id="contact-form-section">
+
+            <h2 class="section-title">Contact Form</h2>
+
+
+
+            <form id="contact-form">
+
+
+
+                <p>
+
+                    <label class="form-label" for="name">Full Name:</label>
+
+                    <input type="text" id="name" name="name" required>
+
+                </p>
+
+
+
+                <p>
+
+                    <label class="form-label" for="email">Email Address:</label>
+
+                    <input type="email" id="email" name="email" required>
+
+                </p>
+
+
+
+                <fieldset>
+
+                    <legend class="form-label">Gender:</legend>
+
+
+
+                    <label>
+
+                        <input type="radio" name="gender" value="Male">
+
+                        Male
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="radio" name="gender" value="Female">
+
+                        Female
+
+                    </label>
+
+                </fieldset>
+
+
+
+                <fieldset>
+
+                    <legend class="form-label">Interests:</legend>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Technology">
+
+                        Technology
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Gaming">
+
+                        Gaming
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Music">
+
+                        Music
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Coding">
+
+                        Coding
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Movies">
+
+                        Movies
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Sports">
+
+                        Sports
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Drawing">
+
+                        Drawing
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input type="checkbox" name="interest" value="Traveling">
+
+                        Traveling
+
+                    </label>
+
+                </fieldset>
+
+
+
+                <p>
+
+                    <label class="form-label" for="strand">Strand:</label>
+
+
+
+                    <select id="strand" name="strand">
+
+                        <option value="ICT">ICT</option>
+
+                        <option value="STEM">STEM</option>
+
+                        <option value="ABM">ABM</option>
+
+                        <option value="HUMSS">HUMSS</option>
+
+                        <option value="GAS">GAS</option>
+
+                    </select>
+
+                </p>
+
+
+
+                <p>
+
+                    <label class="form-label" for="purpose">Purpose of Visit:</label>
+
+
+
+                    <select id="purpose" name="purpose">
+
+                        <option value="General Inquiry">General Inquiry</option>
+
+                        <option value="Feedback">Feedback</option>
+
+                        <option value="Collaboration">Collaboration</option>
+
+                        <option value="School Project">School Project</option>
+
+                        <option value="Others">Others</option>
+
+                    </select>
+
+                </p>
+
+
+
+                <p>
+
+                    <label class="form-label" for="message">Message:</label>
+
+                    <textarea id="message" name="message" rows="7" cols="50" required></textarea>
+
+                </p>
+
+
+
+                <p id="status-message" role="status" aria-live="polite"></p>
+
+
+
+                <input type="hidden" name="title" value="Contact Me Form">
+
+                <input type="hidden" id="time" name="time">
+
+
+
+                <p>
+
+                    <button type="submit" class="btn primary">Send Message</button>
+
+                    <button type="reset" class="btn">Clear Form</button>
+
+                </p>
+
+
+
+            </form>
+
+        </section>
+
+
+
+        <section>
+
+            <h2 class="section-title">Technology and Communication Gallery</h2>
+
+
+
+            <p>Here are some images related to technology, coding, and communication.</p>
+
+
+
+            <div class="gallery-container">
+
+
+
+                <div class="gallery-card">
+
+                    <img
+
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80"
+
+                        alt="Person using a laptop to communicate online">
+
+                    <h3>Communication</h3>
+
+                    <p>Communication helps people share ideas and information.</p>
+
+                </div>
+
+
+
+                <div class="gallery-card">
+
+                    <img
+
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80"
+
+                        alt="Laptop and workspace used for coding">
+
+                    <h3>Coding</h3>
+
+                    <p>Coding helps me learn how to create websites.</p>
+
+                </div>
+
+
+
+                <div class="gallery-card">
+
+                    <img
+
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+
+                        alt="People working together with computers">
+
+                    <h3>Technology</h3>
+
+                    <p>Technology helps people learn and work together.</p>
+
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <hr>
+
+
+
+        <section>
+
+            <h2 class="section-title">Thank You!</h2>
+
+            <p>THANK YOU SO MUCH FOR VISITING MY CONTACT FORM!</p>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>My Personal Profile Website</p>
+
+        <a href="#top">Back to Top</a>
+
+    </footer>
+
+
+
+    <script>
+
+        emailjs.init({
+
+            publicKey: "iP4AtOiV2tNr7G7AL"
+
+        });
+
+
+
+        const contactForm = document.getElementById("contact-form");
+
+        const statusMessage = document.getElementById("status-message");
+
+        const timeInput = document.getElementById("time");
+
+
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+
+            timeInput.value = new Date().toLocaleString();
+
+            statusMessage.textContent = "Sending message...";
+
+
+
+            emailjs.sendForm(
+
+                "service_mypg2rg",
+
+                "template_watftzj",
+
+                contactForm
+
+            )
+
+            .then(function () {
+
+                statusMessage.textContent = "Successfully Sent!";
+
+                contactForm.reset();
+
+            })
+
+            .catch(function (error) {
+
+                console.error("EmailJS error:", error);
+
+                statusMessage.textContent =
+
+                    "Failed to send. Please check your connection and try again.";
+
+            });
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html> 
